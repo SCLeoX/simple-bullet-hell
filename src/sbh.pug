@@ -1,0 +1,24 @@
+doctype html
+META
+  page sbh
+html
+  head
+    meta(name="viewport" content="width=device-width")
+    link(href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet")
+    style.
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      @media (orientation: portrait) {
+        html {
+          transform: rotate(-90deg);
+          transform-origin: left top;
+          position: absolute;
+          top: 100%;
+        }
+      }
+  body
+    canvas#canvas
+    script(src='./external/polyfill.js')
+    script(src='./entry.js')

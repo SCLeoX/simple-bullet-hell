@@ -1,0 +1,20 @@
+[
+  # Babel Polyfill
+  # https://cdnjs.com/libraries/babel-polyfill
+  {
+    source: 'link'
+    name: 'babel-polyfill'
+    address: 'https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.23.0/polyfill<%= dotMinIfProduction %>.js'
+    exports:
+      'polyfill<%= dotMinIfProduction %>.js': 'polyfill.js'
+  }
+
+  # Random-js
+  # https://github.com/ckknight/random-js
+  {
+    source: 'bower'
+    name: 'random'
+    exports:
+      'lib/random<%= dotMinIfProduction %>.js': 'random.js'
+  }
+]
